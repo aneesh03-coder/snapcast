@@ -1,14 +1,14 @@
 import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
-import aj from "./lib/arcjet";
-import {  detectBot, shield } from "@arcjet/next";
+// import aj from "./lib/arcjet";
+// import {  detectBot, shield } from "@arcjet/next";
 
 export async function middleware(request:NextRequest){
-    aj
-.withRule(shield({mode:'LIVE'}))
-.withRule(detectBot({mode:'LIVE', allow: ["CATEGORY:SEARCH_ENGINE","GOOGLE_CRAWLER"]}))
-    console.log('No 1 request is working')
+//     aj
+// .withRule(shield({mode:'LIVE'}))
+// .withRule(detectBot({mode:'LIVE', allow: ["CATEGORY:SEARCH_ENGINE","GOOGLE_CRAWLER"]}))
+//     console.log('No 1 request is working')
     const session= await auth.api.getSession({
         headers:await headers()
     }
