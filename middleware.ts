@@ -19,11 +19,11 @@ if(!session){
 return NextResponse.next()
 }
 
-const validate=aj
-.withRule(shield({mode:'LIVE'}))
-.withRule(detectBot({mode:'LIVE', allow: ["CATEGORY:SEARCH_ENGINE","GOOGLE_CRAWLER"]}))
+// const validate=aj
+// .withRule(shield({mode:'LIVE'}))
+// .withRule(detectBot({mode:'LIVE', allow: ["CATEGORY:SEARCH_ENGINE","GOOGLE_CRAWLER"]}))
 
-export default createMiddleware(validate)
+// export default createMiddleware(validate)
 
 
 export const config={
