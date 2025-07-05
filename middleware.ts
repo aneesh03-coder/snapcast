@@ -2,7 +2,7 @@ import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import aj from "./lib/arcjet";
-import { createMiddleware, detectBot, shield } from "@arcjet/next";
+import {  detectBot, shield } from "@arcjet/next";
 
 export async function middleware(request:NextRequest){
     aj
