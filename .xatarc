@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Aneesh-Kalra-s-workspace-vjbu12.eu-central-1.xata.sh/db/snapcast",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}
